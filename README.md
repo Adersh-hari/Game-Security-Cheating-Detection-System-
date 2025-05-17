@@ -17,7 +17,7 @@ This system simulates player behavioral data and uses Isolation Forest to detect
 
 ## Key Files
 
-- **Dataset:** `data/player_behavior.csv` — Simulated player stats with suspected cheater labels.
+- **Dataset:** `player_behavior.csv` — Simulated player stats with suspected cheater labels.
 - **Detection Script:** `scripts/detect_cheaters.py` — Runs anomaly detection and outputs flagged players.
 - **Cheat Detection Report:** `report/cheat_detection_report.txt` — Explains methodology, results, and next steps.
 - **Requirements:** `requirements.txt` — Lists Python dependencies for easy setup.
