@@ -45,10 +45,5 @@ Player behavioral features (accuracy, reaction time, movement speed, etc.) are p
 *Completed*  
 This project serves as a cybersecurity portfolio piece demonstrating practical cheat detection techniques using data science.
 
-## Project Structure
-
-- [data/](data/)
-- [scripts/](scripts/)
-- [report/](report/)
 
 
