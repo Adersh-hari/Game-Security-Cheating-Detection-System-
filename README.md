@@ -18,7 +18,7 @@ This system simulates player behavioral data and uses Isolation Forest to detect
 ## Key Files
 
 - [data/player_behavior.csv](https://github.com/Adersh-hari/Game-Security-Cheating-Detection-System-/blob/main/detect_cheaters.py) — Simulated player stats with suspected cheater labels.
-- [scripts/detect_cheaters.py](scripts/detect_cheaters.py) — Runs anomaly detection and outputs flagged players.
+- [scripts/detect_cheaters.py](https://github.com/Adersh-hari/Game-Security-Cheating-Detection-System-/blob/main/detect_cheaters.py) — Runs anomaly detection and outputs flagged players.
 - [report/cheat_detection_report.txt](report/cheat_detection_report.txt) — Explains methodology, results, and next steps.
 - [requirements.txt](requirements.txt) — Lists Python dependencies for easy setup.
 
