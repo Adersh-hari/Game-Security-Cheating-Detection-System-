@@ -51,6 +51,4 @@ This project serves as a cybersecurity portfolio piece demonstrating practical c
 - [scripts/](scripts/)
 - [report/](report/)
 
----
 
-*Feel free to explore, adapt, or extend this system for game security research or applications!*
