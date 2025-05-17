@@ -1,45 +1,47 @@
-# Game Cheating Detection System 🎮🛡️
+# Game Security & Cheating Detection System
 
-## Overview
-This project detects cheating behavior in online FPS games (e.g., Valorant, CS:GO) using player behavioral data and machine learning. It demonstrates how data science and cybersecurity can be combined to improve game integrity.
+This project develops a behavioral analysis and cheat detection system for multiplayer FPS games (e.g., Valorant, PUBG). It leverages unsupervised machine learning to identify cheating patterns and improve game fairness.
 
-## Features
-- Behavioral analysis using player stats (accuracy, headshot ratio, etc.)
-- Cheat detection with Isolation Forest (unsupervised anomaly detection)
-- Comparison with known cheaters (if labeled data is available)
-- Visualization of anomalies
-- Extendable to real-time data or MMO-style games
+## Table of Contents
 
-## Dataset
-The `player_behavior.csv` file includes simulated data with the following fields:
-- `accuracy`: Hit accuracy (0 to 1)
-- `headshot_ratio`: Proportion of headshots
-- `movement_speed`: Player movement speed (units/sec)
-- `reaction_time`: Time to react (seconds)
-- `kdr`: Kill/Death ratio
-- `suspected`: Ground truth label (1 = suspected cheater, 0 = normal)
+- [Project Overview](#project-overview)
+- [Key Files](#key-files)
+- [Data Flow & Analysis](#data-flow--analysis)
+- [Detection Methodology](#detection-methodology)
+- [Technologies Used](#technologies-used)
+- [Project Status](#project-status)
 
-## How to Use
-1. Install dependencies:
-   ```bash
-   pip install pandas scikit-learn matplotlib seaborn
-   ```
+## Project Overview
 
-2. Run the detection script:
-   ```bash
-   python scripts/detect_cheaters.py
-   ```
+This system simulates player behavioral data and uses Isolation Forest to detect anomalous patterns consistent with cheating or unfair play. It aims to support game security by providing actionable cheat flags and analytics.
 
-3. Output:
-   - `data/detected_cheaters.csv`: Result with predictions
-   - `data/cheater_detection_plot.png`: Visual anomaly detection
-   - Console output: Classification report
+## Key Files
 
-## Future Extensions
-- Apply to MMO games with economic behavior metrics
-- Add supervised learning models (e.g., logistic regression)
-- Real-time detection via online data streams
-- Integrate into game servers for live moderation
+- **Dataset:** `data/player_behavior.csv` — Simulated player stats with suspected cheater labels.
+- **Detection Script:** `scripts/detect_cheaters.py` — Runs anomaly detection and outputs flagged players.
+- **Cheat Detection Report:** `report/cheat_detection_report.txt` — Explains methodology, results, and next steps.
+- **Requirements:** `requirements.txt` — Lists Python dependencies for easy setup.
 
-## Authors
-Developed as part of a cybersecurity + data science portfolio project.
+## Data Flow & Analysis
+
+Player behavioral features (accuracy, reaction time, movement speed, etc.) are processed through an Isolation Forest model to identify outliers. The results are saved with prediction labels and visualized to aid interpretation.
+
+## Detection Methodology
+
+- Uses **Isolation Forest** for unsupervised anomaly detection.
+- Features analyzed include accuracy, headshot ratio, movement speed, reaction time, and kill/death ratio.
+- Model flags players whose behavior significantly deviates from typical patterns as suspected cheaters.
+
+## Technologies Used
+
+- Python (data processing and machine learning)
+- pandas (data manipulation)
+- scikit-learn (machine learning)
+- matplotlib & seaborn (visualization)
+- Git/GitHub (version control)
+
+## Project Status
+
+*Completed*  
+This project serves as a cybersecurity portfolio piece demonstrating practical cheat detection techniques using data science.
+
